@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF6D3D87204304D7008B93B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3D86204304D7008B93B2 /* AppDelegate.swift */; };
+		CF6D3D89204304D7008B93B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3D88204304D7008B93B2 /* ViewController.swift */; };
+		CF6D3D8C204304D7008B93B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6D3D8A204304D7008B93B2 /* Main.storyboard */; };
+		CF6D3D8E204304D7008B93B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6D3D8D204304D7008B93B2 /* Assets.xcassets */; };
+		CF6D3D91204304D7008B93B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6D3D8F204304D7008B93B2 /* LaunchScreen.storyboard */; };
+		CF6D3D9C204304D7008B93B2 /* VybeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3D9B204304D7008B93B2 /* VybeTests.swift */; };
+		CF6D3DA7204304D7008B93B2 /* VybeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3DA6204304D7008B93B2 /* VybeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF6D3D98204304D7008B93B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF6D3D7B204304D7008B93B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF6D3D82204304D7008B93B2;
+			remoteInfo = Vybe;
+		};
+		CF6D3DA3204304D7008B93B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF6D3D7B204304D7008B93B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF6D3D82204304D7008B93B2;
+			remoteInfo = Vybe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF6D3D83204304D7008B93B2 /* Vybe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vybe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6D3D86204304D7008B93B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF6D3D88204304D7008B93B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF6D3D8B204304D7008B93B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF6D3D8D204304D7008B93B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF6D3D90204304D7008B93B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF6D3D92204304D7008B93B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6D3D97204304D7008B93B2 /* VybeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VybeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6D3D9B204304D7008B93B2 /* VybeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VybeTests.swift; sourceTree = "<group>"; };
+		CF6D3D9D204304D7008B93B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6D3DA2204304D7008B93B2 /* VybeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VybeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6D3DA6204304D7008B93B2 /* VybeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VybeUITests.swift; sourceTree = "<group>"; };
+		CF6D3DA8204304D7008B93B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF6D3D80204304D7008B93B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF6D3D94204304D7008B93B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF6D3D9F204304D7008B93B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF6D3D7A204304D7008B93B2 = {
+			isa = PBXGroup;
+			children = (
+				CF6D3D85204304D7008B93B2 /* Vybe */,
+				CF6D3D9A204304D7008B93B2 /* VybeTests */,
+				CF6D3DA5204304D7008B93B2 /* VybeUITests */,
+				CF6D3D84204304D7008B93B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF6D3D84204304D7008B93B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D3D83204304D7008B93B2 /* Vybe.app */,
+				CF6D3D97204304D7008B93B2 /* VybeTests.xctest */,
+				CF6D3DA2204304D7008B93B2 /* VybeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF6D3D85204304D7008B93B2 /* Vybe */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D3D86204304D7008B93B2 /* AppDelegate.swift */,
+				CF6D3D88204304D7008B93B2 /* ViewController.swift */,
+				CF6D3D8A204304D7008B93B2 /* Main.storyboard */,
+				CF6D3D8D204304D7008B93B2 /* Assets.xcassets */,
+				CF6D3D8F204304D7008B93B2 /* LaunchScreen.storyboard */,
+				CF6D3D92204304D7008B93B2 /* Info.plist */,
+			);
+			path = Vybe;
+			sourceTree = "<group>";
+		};
+		CF6D3D9A204304D7008B93B2 /* VybeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D3D9B204304D7008B93B2 /* VybeTests.swift */,
+				CF6D3D9D204304D7008B93B2 /* Info.plist */,
+			);
+			path = VybeTests;
+			sourceTree = "<group>";
+		};
+		CF6D3DA5204304D7008B93B2 /* VybeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D3DA6204304D7008B93B2 /* VybeUITests.swift */,
+				CF6D3DA8204304D7008B93B2 /* Info.plist */,
+			);
+			path = VybeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF6D3D82204304D7008B93B2 /* Vybe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF6D3DAB204304D7008B93B2 /* Build configuration list for PBXNativeTarget "Vybe" */;
+			buildPhases = (
+				CF6D3D7F204304D7008B93B2 /* Sources */,
+				CF6D3D80204304D7008B93B2 /* Frameworks */,
+				CF6D3D81204304D7008B93B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vybe;
+			productName = Vybe;
+			productReference = CF6D3D83204304D7008B93B2 /* Vybe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF6D3D96204304D7008B93B2 /* VybeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF6D3DAE204304D7008B93B2 /* Build configuration list for PBXNativeTarget "VybeTests" */;
+			buildPhases = (
+				CF6D3D93204304D7008B93B2 /* Sources */,
+				CF6D3D94204304D7008B93B2 /* Frameworks */,
+				CF6D3D95204304D7008B93B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF6D3D99204304D7008B93B2 /* PBXTargetDependency */,
+			);
+			name = VybeTests;
+			productName = VybeTests;
+			productReference = CF6D3D97204304D7008B93B2 /* VybeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF6D3DA1204304D7008B93B2 /* VybeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF6D3DB1204304D7008B93B2 /* Build configuration list for PBXNativeTarget "VybeUITests" */;
+			buildPhases = (
+				CF6D3D9E204304D7008B93B2 /* Sources */,
+				CF6D3D9F204304D7008B93B2 /* Frameworks */,
+				CF6D3DA0204304D7008B93B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF6D3DA4204304D7008B93B2 /* PBXTargetDependency */,
+			);
+			name = VybeUITests;
+			productName = VybeUITests;
+			productReference = CF6D3DA2204304D7008B93B2 /* VybeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF6D3D7B204304D7008B93B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Trevor Rose";
+				TargetAttributes = {
+					CF6D3D82204304D7008B93B2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CF6D3D96204304D7008B93B2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF6D3D82204304D7008B93B2;
+					};
+					CF6D3DA1204304D7008B93B2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF6D3D82204304D7008B93B2;
+					};
+				};
+			};
+			buildConfigurationList = CF6D3D7E204304D7008B93B2 /* Build configuration list for PBXProject "Vybe" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF6D3D7A204304D7008B93B2;
+			productRefGroup = CF6D3D84204304D7008B93B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF6D3D82204304D7008B93B2 /* Vybe */,
+				CF6D3D96204304D7008B93B2 /* VybeTests */,
+				CF6D3DA1204304D7008B93B2 /* VybeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF6D3D81204304D7008B93B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6D3D91204304D7008B93B2 /* LaunchScreen.storyboard in Resources */,
+				CF6D3D8E204304D7008B93B2 /* Assets.xcassets in Resources */,
+				CF6D3D8C204304D7008B93B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF6D3D95204304D7008B93B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF6D3DA0204304D7008B93B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF6D3D7F204304D7008B93B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6D3D89204304D7008B93B2 /* ViewController.swift in Sources */,
+				CF6D3D87204304D7008B93B2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF6D3D93204304D7008B93B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6D3D9C204304D7008B93B2 /* VybeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF6D3D9E204304D7008B93B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6D3DA7204304D7008B93B2 /* VybeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF6D3D99204304D7008B93B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF6D3D82204304D7008B93B2 /* Vybe */;
+			targetProxy = CF6D3D98204304D7008B93B2 /* PBXContainerItemProxy */;
+		};
+		CF6D3DA4204304D7008B93B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF6D3D82204304D7008B93B2 /* Vybe */;
+			targetProxy = CF6D3DA3204304D7008B93B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF6D3D8A204304D7008B93B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF6D3D8B204304D7008B93B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF6D3D8F204304D7008B93B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF6D3D90204304D7008B93B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF6D3DA9204304D7008B93B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF6D3DAA204304D7008B93B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF6D3DAC204304D7008B93B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9F5M35K84C;
+				INFOPLIST_FILE = Vybe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyloftstudios.Vybe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF6D3DAD204304D7008B93B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9F5M35K84C;
+				INFOPLIST_FILE = Vybe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyloftstudios.Vybe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF6D3DAF204304D7008B93B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9F5M35K84C;
+				INFOPLIST_FILE = VybeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyloftstudios.VybeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vybe.app/Vybe";
+			};
+			name = Debug;
+		};
+		CF6D3DB0204304D7008B93B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9F5M35K84C;
+				INFOPLIST_FILE = VybeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyloftstudios.VybeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vybe.app/Vybe";
+			};
+			name = Release;
+		};
+		CF6D3DB2204304D7008B93B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9F5M35K84C;
+				INFOPLIST_FILE = VybeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyloftstudios.VybeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vybe;
+			};
+			name = Debug;
+		};
+		CF6D3DB3204304D7008B93B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9F5M35K84C;
+				INFOPLIST_FILE = VybeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keyloftstudios.VybeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vybe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF6D3D7E204304D7008B93B2 /* Build configuration list for PBXProject "Vybe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF6D3DA9204304D7008B93B2 /* Debug */,
+				CF6D3DAA204304D7008B93B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF6D3DAB204304D7008B93B2 /* Build configuration list for PBXNativeTarget "Vybe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF6D3DAC204304D7008B93B2 /* Debug */,
+				CF6D3DAD204304D7008B93B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF6D3DAE204304D7008B93B2 /* Build configuration list for PBXNativeTarget "VybeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF6D3DAF204304D7008B93B2 /* Debug */,
+				CF6D3DB0204304D7008B93B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF6D3DB1204304D7008B93B2 /* Build configuration list for PBXNativeTarget "VybeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF6D3DB2204304D7008B93B2 /* Debug */,
+				CF6D3DB3204304D7008B93B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF6D3D7B204304D7008B93B2 /* Project object */;
+}
