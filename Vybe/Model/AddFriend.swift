@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import Firebase
+
+class AddFriend {
+    private var _friendId: String!
+    
+    var friendId: String {
+        return _friendId
+    }
+    init(friendKey: String) {
+        _friendId = friendKey
+    }
+    
+}

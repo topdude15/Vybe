@@ -7,13 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E32DB750A336E417857989D /* Pods_Vybe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49195CBA193441DB964365CA /* Pods_Vybe.framework */; };
+		796C7FDFBAFEAB29D78046DF /* Pods_VybeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723911ECD8A006460C7DDAA7 /* Pods_VybeTests.framework */; };
+		C1CEE472F284BC33D3C4F2E8 /* Pods_VybeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5409B4CBF270B0F1E45C9605 /* Pods_VybeUITests.framework */; };
+		CF0053F920435E45003CDEFB /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0053F820435E45003CDEFB /* MainPageVC.swift */; };
+		CF2B015F206C28E7007C1B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2B015E206C28E7007C1B6F /* Main.storyboard */; };
+		CF325E132071688200D0F3CE /* AddFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E122071688200D0F3CE /* AddFriendVC.swift */; };
+		CF325E192071BB6500D0F3CE /* AddFriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E182071BB6500D0F3CE /* AddFriendCell.swift */; };
+		CF325E1B2071BEEB00D0F3CE /* AddFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E1A2071BEEB00D0F3CE /* AddFriend.swift */; };
+		CF325E1D2072551000D0F3CE /* FriendListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E1C2072551000D0F3CE /* FriendListVC.swift */; };
+		CF325E202072554300D0F3CE /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E1F2072554300D0F3CE /* FriendCell.swift */; };
+		CF325E222072555400D0F3CE /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E212072555400D0F3CE /* Friend.swift */; };
 		CF6D3D87204304D7008B93B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3D86204304D7008B93B2 /* AppDelegate.swift */; };
-		CF6D3D89204304D7008B93B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3D88204304D7008B93B2 /* ViewController.swift */; };
-		CF6D3D8C204304D7008B93B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6D3D8A204304D7008B93B2 /* Main.storyboard */; };
 		CF6D3D8E204304D7008B93B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6D3D8D204304D7008B93B2 /* Assets.xcassets */; };
 		CF6D3D91204304D7008B93B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6D3D8F204304D7008B93B2 /* LaunchScreen.storyboard */; };
 		CF6D3D9C204304D7008B93B2 /* VybeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3D9B204304D7008B93B2 /* VybeTests.swift */; };
 		CF6D3DA7204304D7008B93B2 /* VybeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3DA6204304D7008B93B2 /* VybeUITests.swift */; };
+		CF6D3DB520430674008B93B2 /* CaptureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3DB420430674008B93B2 /* CaptureVC.swift */; };
+		CF6D3DBB2043069E008B93B2 /* SwiftyCamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3DB72043069D008B93B2 /* SwiftyCamButton.swift */; };
+		CF6D3DBC2043069E008B93B2 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3DB82043069D008B93B2 /* PreviewView.swift */; };
+		CF6D3DBD2043069E008B93B2 /* SwiftyCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3DB92043069D008B93B2 /* SwiftyCamViewController.swift */; };
+		CF6D3DBE2043069E008B93B2 /* SwiftyCamViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3DBA2043069D008B93B2 /* SwiftyCamViewControllerDelegate.swift */; };
+		CF9EFFA5204452770026DCA1 /* TestingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9EFFA4204452770026DCA1 /* TestingVC.swift */; };
+		CFC1FB7D206C2D14005CE6BE /* SwiftyRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB7C206C2D14005CE6BE /* SwiftyRecordButton.swift */; };
+		CFC1FB7F206C5501005CE6BE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB7E206C5501005CE6BE /* CustomView.swift */; };
+		CFC1FB81206C9504005CE6BE /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB80206C9504005CE6BE /* CustomImage.swift */; };
+		CFC1FB83206C9733005CE6BE /* FrontPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB82206C9733005CE6BE /* FrontPageVC.swift */; };
+		CFC1FB85206C983B005CE6BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFC1FB84206C983B005CE6BE /* GoogleService-Info.plist */; };
+		CFC1FB8720704D7F005CE6BE /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB8620704D7F005CE6BE /* LogInVC.swift */; };
+		CFC1FB8A20704FF6005CE6BE /* SignUpName.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB8920704FF6005CE6BE /* SignUpName.swift */; };
+		CFC1FB8C20705002005CE6BE /* SignUpBirthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB8B20705002005CE6BE /* SignUpBirthday.swift */; };
+		CFC1FB8E2070500B005CE6BE /* SignUpUsername.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB8D2070500B005CE6BE /* SignUpUsername.swift */; };
+		CFC1FB9020705015005CE6BE /* SignUpPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB8F20705015005CE6BE /* SignUpPassword.swift */; };
+		CFC1FB9320708533005CE6BE /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB9220708533005CE6BE /* Util.swift */; };
+		CFC1FB9520708613005CE6BE /* SignUpEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB9420708613005CE6BE /* SignUpEmail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +61,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16B0B6B6FCD989A3D98F57C0 /* Pods-VybeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VybeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VybeUITests/Pods-VybeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		49195CBA193441DB964365CA /* Pods_Vybe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vybe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5409B4CBF270B0F1E45C9605 /* Pods_VybeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VybeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E6323F658A9488E0970AA6 /* Pods-VybeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VybeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VybeTests/Pods-VybeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		723911ECD8A006460C7DDAA7 /* Pods_VybeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VybeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8350563E753419C1C515A06E /* Pods-VybeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VybeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VybeTests/Pods-VybeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A06224229B1A35A16C52C7F0 /* Pods-Vybe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vybe.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vybe/Pods-Vybe.release.xcconfig"; sourceTree = "<group>"; };
+		CF0053F820435E45003CDEFB /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
+		CF2B015E206C28E7007C1B6F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF325E122071688200D0F3CE /* AddFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendVC.swift; sourceTree = "<group>"; };
+		CF325E182071BB6500D0F3CE /* AddFriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendCell.swift; sourceTree = "<group>"; };
+		CF325E1A2071BEEB00D0F3CE /* AddFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriend.swift; sourceTree = "<group>"; };
+		CF325E1C2072551000D0F3CE /* FriendListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListVC.swift; sourceTree = "<group>"; };
+		CF325E1F2072554300D0F3CE /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		CF325E212072555400D0F3CE /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		CF6D3D83204304D7008B93B2 /* Vybe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vybe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6D3D86204304D7008B93B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF6D3D88204304D7008B93B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CF6D3D8B204304D7008B93B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF6D3D8D204304D7008B93B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF6D3D90204304D7008B93B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF6D3D92204304D7008B93B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +87,26 @@
 		CF6D3DA2204304D7008B93B2 /* VybeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VybeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6D3DA6204304D7008B93B2 /* VybeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VybeUITests.swift; sourceTree = "<group>"; };
 		CF6D3DA8204304D7008B93B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6D3DB420430674008B93B2 /* CaptureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureVC.swift; sourceTree = "<group>"; };
+		CF6D3DB72043069D008B93B2 /* SwiftyCamButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCamButton.swift; sourceTree = "<group>"; };
+		CF6D3DB82043069D008B93B2 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		CF6D3DB92043069D008B93B2 /* SwiftyCamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCamViewController.swift; sourceTree = "<group>"; };
+		CF6D3DBA2043069D008B93B2 /* SwiftyCamViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCamViewControllerDelegate.swift; sourceTree = "<group>"; };
+		CF9EFFA4204452770026DCA1 /* TestingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingVC.swift; sourceTree = "<group>"; };
+		CFC1FB7C206C2D14005CE6BE /* SwiftyRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyRecordButton.swift; sourceTree = "<group>"; };
+		CFC1FB7E206C5501005CE6BE /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		CFC1FB80206C9504005CE6BE /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
+		CFC1FB82206C9733005CE6BE /* FrontPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageVC.swift; sourceTree = "<group>"; };
+		CFC1FB84206C983B005CE6BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CFC1FB8620704D7F005CE6BE /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		CFC1FB8920704FF6005CE6BE /* SignUpName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpName.swift; sourceTree = "<group>"; };
+		CFC1FB8B20705002005CE6BE /* SignUpBirthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBirthday.swift; sourceTree = "<group>"; };
+		CFC1FB8D2070500B005CE6BE /* SignUpUsername.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUsername.swift; sourceTree = "<group>"; };
+		CFC1FB8F20705015005CE6BE /* SignUpPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPassword.swift; sourceTree = "<group>"; };
+		CFC1FB9220708533005CE6BE /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		CFC1FB9420708613005CE6BE /* SignUpEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmail.swift; sourceTree = "<group>"; };
+		F7594D32AD3ED52A722EDFBD /* Pods-VybeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VybeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VybeUITests/Pods-VybeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F7C7F287C3C164AF6382E1A9 /* Pods-Vybe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vybe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vybe/Pods-Vybe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E32DB750A336E417857989D /* Pods_Vybe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796C7FDFBAFEAB29D78046DF /* Pods_VybeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +130,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CEE472F284BC33D3C4F2E8 /* Pods_VybeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FD7910DA9672C62312B060F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49195CBA193441DB964365CA /* Pods_Vybe.framework */,
+				723911ECD8A006460C7DDAA7 /* Pods_VybeTests.framework */,
+				5409B4CBF270B0F1E45C9605 /* Pods_VybeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E812FD08BB21AB9D784A997 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7C7F287C3C164AF6382E1A9 /* Pods-Vybe.debug.xcconfig */,
+				A06224229B1A35A16C52C7F0 /* Pods-Vybe.release.xcconfig */,
+				60E6323F658A9488E0970AA6 /* Pods-VybeTests.debug.xcconfig */,
+				8350563E753419C1C515A06E /* Pods-VybeTests.release.xcconfig */,
+				16B0B6B6FCD989A3D98F57C0 /* Pods-VybeUITests.debug.xcconfig */,
+				F7594D32AD3ED52A722EDFBD /* Pods-VybeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF0053F52043506D003CDEFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF325E1E2072551700D0F3CE /* Pages */,
+				CFC1FB8820704FEA005CE6BE /* Sign Up */,
+				CF0053F820435E45003CDEFB /* MainPageVC.swift */,
+				CF9EFFA4204452770026DCA1 /* TestingVC.swift */,
+				CFC1FB82206C9733005CE6BE /* FrontPageVC.swift */,
+				CFC1FB8620704D7F005CE6BE /* LogInVC.swift */,
+				CF325E122071688200D0F3CE /* AddFriendVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF0053F620435076003CDEFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFC1FB7E206C5501005CE6BE /* CustomView.swift */,
+				CFC1FB80206C9504005CE6BE /* CustomImage.swift */,
+				CF325E182071BB6500D0F3CE /* AddFriendCell.swift */,
+				CF325E1F2072554300D0F3CE /* FriendCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF0053F72043507C003CDEFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF325E1A2071BEEB00D0F3CE /* AddFriend.swift */,
+				CF325E212072555400D0F3CE /* Friend.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF325E1E2072551700D0F3CE /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D3DB420430674008B93B2 /* CaptureVC.swift */,
+				CF325E1C2072551000D0F3CE /* FriendListVC.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
 		CF6D3D7A204304D7008B93B2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +210,8 @@
 				CF6D3D9A204304D7008B93B2 /* VybeTests */,
 				CF6D3DA5204304D7008B93B2 /* VybeUITests */,
 				CF6D3D84204304D7008B93B2 /* Products */,
+				2E812FD08BB21AB9D784A997 /* Pods */,
+				1FD7910DA9672C62312B060F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +228,17 @@
 		CF6D3D85204304D7008B93B2 /* Vybe */ = {
 			isa = PBXGroup;
 			children = (
-				CF6D3D86204304D7008B93B2 /* AppDelegate.swift */,
-				CF6D3D88204304D7008B93B2 /* ViewController.swift */,
-				CF6D3D8A204304D7008B93B2 /* Main.storyboard */,
+				CF0053F72043507C003CDEFB /* Model */,
+				CF0053F620435076003CDEFB /* View */,
+				CF0053F52043506D003CDEFB /* Controller */,
+				CFC1FB9120708518005CE6BE /* Util */,
 				CF6D3D8D204304D7008B93B2 /* Assets.xcassets */,
+				CF2B015E206C28E7007C1B6F /* Main.storyboard */,
 				CF6D3D8F204304D7008B93B2 /* LaunchScreen.storyboard */,
+				CF6D3D86204304D7008B93B2 /* AppDelegate.swift */,
 				CF6D3D92204304D7008B93B2 /* Info.plist */,
+				CFC1FB84206C983B005CE6BE /* GoogleService-Info.plist */,
+				CF6D3DB62043069D008B93B2 /* Source */,
 			);
 			path = Vybe;
 			sourceTree = "<group>";
@@ -125,6 +261,38 @@
 			path = VybeUITests;
 			sourceTree = "<group>";
 		};
+		CF6D3DB62043069D008B93B2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CF6D3DB72043069D008B93B2 /* SwiftyCamButton.swift */,
+				CF6D3DB82043069D008B93B2 /* PreviewView.swift */,
+				CF6D3DB92043069D008B93B2 /* SwiftyCamViewController.swift */,
+				CF6D3DBA2043069D008B93B2 /* SwiftyCamViewControllerDelegate.swift */,
+				CFC1FB7C206C2D14005CE6BE /* SwiftyRecordButton.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CFC1FB8820704FEA005CE6BE /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				CFC1FB8920704FF6005CE6BE /* SignUpName.swift */,
+				CFC1FB8B20705002005CE6BE /* SignUpBirthday.swift */,
+				CFC1FB8D2070500B005CE6BE /* SignUpUsername.swift */,
+				CFC1FB9420708613005CE6BE /* SignUpEmail.swift */,
+				CFC1FB8F20705015005CE6BE /* SignUpPassword.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		CFC1FB9120708518005CE6BE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CFC1FB9220708533005CE6BE /* Util.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF6D3DAB204304D7008B93B2 /* Build configuration list for PBXNativeTarget "Vybe" */;
 			buildPhases = (
+				6D1DFCE8E3021700B277F86D /* [CP] Check Pods Manifest.lock */,
 				CF6D3D7F204304D7008B93B2 /* Sources */,
 				CF6D3D80204304D7008B93B2 /* Frameworks */,
 				CF6D3D81204304D7008B93B2 /* Resources */,
+				D4C94102827988790B7092A3 /* [CP] Embed Pods Frameworks */,
+				CDCBA4B049A0556D544CBFDD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +320,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF6D3DAE204304D7008B93B2 /* Build configuration list for PBXNativeTarget "VybeTests" */;
 			buildPhases = (
+				DD71827B60F12DF88A42A381 /* [CP] Check Pods Manifest.lock */,
 				CF6D3D93204304D7008B93B2 /* Sources */,
 				CF6D3D94204304D7008B93B2 /* Frameworks */,
 				CF6D3D95204304D7008B93B2 /* Resources */,
+				E235EDE03E19ABBBAB4E1F5F /* [CP] Embed Pods Frameworks */,
+				1FC554A3E1EB66C550D1C805 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +341,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF6D3DB1204304D7008B93B2 /* Build configuration list for PBXNativeTarget "VybeUITests" */;
 			buildPhases = (
+				1B659C06D41625B3F420C394 /* [CP] Check Pods Manifest.lock */,
 				CF6D3D9E204304D7008B93B2 /* Sources */,
 				CF6D3D9F204304D7008B93B2 /* Frameworks */,
 				CF6D3DA0204304D7008B93B2 /* Resources */,
+				BA37DB1D07E96688936B58EE /* [CP] Embed Pods Frameworks */,
+				A6AA3865E831BCFB3CAD6A22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +409,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2B015F206C28E7007C1B6F /* Main.storyboard in Resources */,
+				CFC1FB85206C983B005CE6BE /* GoogleService-Info.plist in Resources */,
 				CF6D3D91204304D7008B93B2 /* LaunchScreen.storyboard in Resources */,
 				CF6D3D8E204304D7008B93B2 /* Assets.xcassets in Resources */,
-				CF6D3D8C204304D7008B93B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +432,200 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B659C06D41625B3F420C394 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VybeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FC554A3E1EB66C550D1C805 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VybeTests/Pods-VybeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D1DFCE8E3021700B277F86D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vybe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6AA3865E831BCFB3CAD6A22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VybeUITests/Pods-VybeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA37DB1D07E96688936B58EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VybeUITests/Pods-VybeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDCBA4B049A0556D544CBFDD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vybe/Pods-Vybe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C94102827988790B7092A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Vybe/Pods-Vybe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyCam/SwiftyCam.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulley.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyCam.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vybe/Pods-Vybe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD71827B60F12DF88A42A381 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VybeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235EDE03E19ABBBAB4E1F5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VybeTests/Pods-VybeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF6D3D7F204304D7008B93B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF6D3D89204304D7008B93B2 /* ViewController.swift in Sources */,
+				CF6D3DBB2043069E008B93B2 /* SwiftyCamButton.swift in Sources */,
+				CFC1FB9320708533005CE6BE /* Util.swift in Sources */,
+				CF325E222072555400D0F3CE /* Friend.swift in Sources */,
+				CFC1FB9020705015005CE6BE /* SignUpPassword.swift in Sources */,
+				CFC1FB7D206C2D14005CE6BE /* SwiftyRecordButton.swift in Sources */,
+				CFC1FB8720704D7F005CE6BE /* LogInVC.swift in Sources */,
+				CF325E1B2071BEEB00D0F3CE /* AddFriend.swift in Sources */,
+				CF9EFFA5204452770026DCA1 /* TestingVC.swift in Sources */,
+				CF325E132071688200D0F3CE /* AddFriendVC.swift in Sources */,
+				CFC1FB81206C9504005CE6BE /* CustomImage.swift in Sources */,
+				CF325E1D2072551000D0F3CE /* FriendListVC.swift in Sources */,
+				CFC1FB8E2070500B005CE6BE /* SignUpUsername.swift in Sources */,
+				CF6D3DBE2043069E008B93B2 /* SwiftyCamViewControllerDelegate.swift in Sources */,
+				CF6D3DBC2043069E008B93B2 /* PreviewView.swift in Sources */,
+				CFC1FB7F206C5501005CE6BE /* CustomView.swift in Sources */,
+				CFC1FB9520708613005CE6BE /* SignUpEmail.swift in Sources */,
+				CF0053F920435E45003CDEFB /* MainPageVC.swift in Sources */,
+				CF6D3DBD2043069E008B93B2 /* SwiftyCamViewController.swift in Sources */,
+				CF325E192071BB6500D0F3CE /* AddFriendCell.swift in Sources */,
+				CFC1FB8A20704FF6005CE6BE /* SignUpName.swift in Sources */,
+				CF325E202072554300D0F3CE /* FriendCell.swift in Sources */,
 				CF6D3D87204304D7008B93B2 /* AppDelegate.swift in Sources */,
+				CF6D3DB520430674008B93B2 /* CaptureVC.swift in Sources */,
+				CFC1FB83206C9733005CE6BE /* FrontPageVC.swift in Sources */,
+				CFC1FB8C20705002005CE6BE /* SignUpBirthday.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +661,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CF6D3D8A204304D7008B93B2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF6D3D8B204304D7008B93B2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CF6D3D8F204304D7008B93B2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -424,11 +781,13 @@
 		};
 		CF6D3DAC204304D7008B93B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C7F287C3C164AF6382E1A9 /* Pods-Vybe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9F5M35K84C;
+				DEVELOPMENT_TEAM = CYJ5JJBLT6;
 				INFOPLIST_FILE = Vybe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keyloftstudios.Vybe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,11 +798,13 @@
 		};
 		CF6D3DAD204304D7008B93B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A06224229B1A35A16C52C7F0 /* Pods-Vybe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9F5M35K84C;
+				DEVELOPMENT_TEAM = CYJ5JJBLT6;
 				INFOPLIST_FILE = Vybe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keyloftstudios.Vybe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -454,6 +815,7 @@
 		};
 		CF6D3DAF204304D7008B93B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E6323F658A9488E0970AA6 /* Pods-VybeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +833,7 @@
 		};
 		CF6D3DB0204304D7008B93B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8350563E753419C1C515A06E /* Pods-VybeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +851,7 @@
 		};
 		CF6D3DB2204304D7008B93B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16B0B6B6FCD989A3D98F57C0 /* Pods-VybeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +868,7 @@
 		};
 		CF6D3DB3204304D7008B93B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7594D32AD3ED52A722EDFBD /* Pods-VybeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

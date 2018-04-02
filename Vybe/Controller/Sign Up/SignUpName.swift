@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Material
 
 class SignUpName: UIViewController {
 
+    @IBOutlet weak var firstNameBox: ErrorTextField!
+    @IBOutlet weak var lastNameBox: ErrorTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,16 +24,13 @@ class SignUpName: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func continueTapped(_ sender: Any) {
+        let firstName = firstNameBox.text
+        let lastName = lastNameBox.text
+        Util.ds.userInfo.updateValue(firstName as AnyObject, forKey: "firstName")
+        Util.ds.userInfo.updateValue(lastName as AnyObject, forKey: "lastName")
+        let birthday = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUpBirthday")
+        present(birthday, animated: true, completion: nil)
     }
-    */
-
 }

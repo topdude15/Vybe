@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Material
+import Firebase
 
 class SignUpUsername: UIViewController {
 
+    @IBOutlet weak var usernameBox: ErrorTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +24,18 @@ class SignUpUsername: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func continueTapped(_ sender: Any) {
+       let username = usernameBox.text
+        
+        Database.database().reference().child("usernames").observeSingleEvent(of: .value) { (snapshot) in
+        if snapshot.hasChild(username!) {
+            print("Username is already in use")
+        } else {
+            Util.ds.userInfo.updateValue(username as AnyObject, forKey: "username")
+            let email = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUpEmail")
+            self.present(email, animated: true, completion: nil)
+            }
+        }
     }
-    */
-
+    
 }

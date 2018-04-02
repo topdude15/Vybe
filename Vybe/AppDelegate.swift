@@ -1,3 +1,4 @@
+
 //
 //  AppDelegate.swift
 //  Vybe
@@ -7,6 +8,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
+        
+        if Auth.auth().currentUser?.uid != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainPageVC")
+            self.window?.rootViewController = main
+        } else {
+            let frontPage = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FrontPageVC")
+            self.window?.rootViewController = frontPage
+        }
         // Override point for customization after application launch.
         return true
     }

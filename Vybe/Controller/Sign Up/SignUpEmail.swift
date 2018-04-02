@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Material
 
 class SignUpEmail: UIViewController {
 
+    @IBOutlet weak var emailBox: ErrorTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,16 +22,10 @@ class SignUpEmail: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func continueTapped(_ sender: Any) {
+        let email = emailBox.text
+        Util.ds.userInfo.updateValue(email as AnyObject, forKey: "email")
+        let password = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignUpPassword")
+        self.present(password, animated: true, completion: nil)
     }
-    */
-
 }

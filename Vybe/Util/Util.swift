@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class Util {
+    static let ds = Util()
+    
+    var userInfo: Dictionary<String, AnyObject> = [:]
+}
+
