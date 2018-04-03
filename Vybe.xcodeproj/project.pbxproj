@@ -18,6 +18,9 @@
 		CF325E1D2072551000D0F3CE /* FriendListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E1C2072551000D0F3CE /* FriendListVC.swift */; };
 		CF325E202072554300D0F3CE /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E1F2072554300D0F3CE /* FriendCell.swift */; };
 		CF325E222072555400D0F3CE /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E212072555400D0F3CE /* Friend.swift */; };
+		CF325E242072CAFF00D0F3CE /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E232072CAFF00D0F3CE /* ChatVC.swift */; };
+		CF325E282072CC4900D0F3CE /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E272072CC4900D0F3CE /* Chat.swift */; };
+		CF325E2A2072CC6D00D0F3CE /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E292072CC6D00D0F3CE /* ChatCell.swift */; };
 		CF6D3D87204304D7008B93B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3D86204304D7008B93B2 /* AppDelegate.swift */; };
 		CF6D3D8E204304D7008B93B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6D3D8D204304D7008B93B2 /* Assets.xcassets */; };
 		CF6D3D91204304D7008B93B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6D3D8F204304D7008B93B2 /* LaunchScreen.storyboard */; };
@@ -76,6 +79,9 @@
 		CF325E1C2072551000D0F3CE /* FriendListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListVC.swift; sourceTree = "<group>"; };
 		CF325E1F2072554300D0F3CE /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		CF325E212072555400D0F3CE /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		CF325E232072CAFF00D0F3CE /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		CF325E272072CC4900D0F3CE /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		CF325E292072CC6D00D0F3CE /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		CF6D3D83204304D7008B93B2 /* Vybe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vybe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6D3D86204304D7008B93B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF6D3D8D204304D7008B93B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 				CFC1FB82206C9733005CE6BE /* FrontPageVC.swift */,
 				CFC1FB8620704D7F005CE6BE /* LogInVC.swift */,
 				CF325E122071688200D0F3CE /* AddFriendVC.swift */,
+				CF325E232072CAFF00D0F3CE /* ChatVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,10 +184,9 @@
 		CF0053F620435076003CDEFB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF325E2B2072CC8700D0F3CE /* Table Cells */,
 				CFC1FB7E206C5501005CE6BE /* CustomView.swift */,
 				CFC1FB80206C9504005CE6BE /* CustomImage.swift */,
-				CF325E182071BB6500D0F3CE /* AddFriendCell.swift */,
-				CF325E1F2072554300D0F3CE /* FriendCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 			children = (
 				CF325E1A2071BEEB00D0F3CE /* AddFriend.swift */,
 				CF325E212072555400D0F3CE /* Friend.swift */,
+				CF325E272072CC4900D0F3CE /* Chat.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,6 +208,16 @@
 				CF325E1C2072551000D0F3CE /* FriendListVC.swift */,
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		CF325E2B2072CC8700D0F3CE /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF325E182071BB6500D0F3CE /* AddFriendCell.swift */,
+				CF325E1F2072554300D0F3CE /* FriendCell.swift */,
+				CF325E292072CC6D00D0F3CE /* ChatCell.swift */,
+			);
+			path = "Table Cells";
 			sourceTree = "<group>";
 		};
 		CF6D3D7A204304D7008B93B2 = {
@@ -365,7 +382,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Trevor Rose";
 				TargetAttributes = {
 					CF6D3D82204304D7008B93B2 = {
@@ -623,8 +640,11 @@
 				CFC1FB8A20704FF6005CE6BE /* SignUpName.swift in Sources */,
 				CF325E202072554300D0F3CE /* FriendCell.swift in Sources */,
 				CF6D3D87204304D7008B93B2 /* AppDelegate.swift in Sources */,
+				CF325E282072CC4900D0F3CE /* Chat.swift in Sources */,
 				CF6D3DB520430674008B93B2 /* CaptureVC.swift in Sources */,
 				CFC1FB83206C9733005CE6BE /* FrontPageVC.swift in Sources */,
+				CF325E2A2072CC6D00D0F3CE /* ChatCell.swift in Sources */,
+				CF325E242072CAFF00D0F3CE /* ChatVC.swift in Sources */,
 				CFC1FB8C20705002005CE6BE /* SignUpBirthday.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +706,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -693,6 +714,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -743,6 +765,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -750,6 +773,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

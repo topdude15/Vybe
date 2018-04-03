@@ -64,6 +64,7 @@ class AddFriendVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
                     ]
                     Database.database().reference().child("friendships").child(uid!).updateChildValues(selfUserData)
                     Database.database().reference().child("friendships").child(friendUid as! String).updateChildValues(otherUserData)
+                    
                 }
             } else {
                 print("Friend not found")
@@ -99,6 +100,7 @@ class AddFriendVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
         let friendId = friend.friendId
         let uid = Auth.auth().currentUser?.uid
         print("Also here")
+        Database.database().reference().child("messages").childByAutoId().updateChildValues(["name": "here"])
         Database.database().reference().child("friendships").child(friendId).updateChildValues([uid!: 2])
         Database.database().reference().child("friendships").child(uid!).updateChildValues([friendId: 2])
         self.loadTable()
