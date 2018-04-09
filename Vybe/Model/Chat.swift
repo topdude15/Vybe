@@ -28,13 +28,13 @@ class Chat {
         return _postId
     }
     init(postKey: String, postData: Dictionary<String, AnyObject>) {
-        if let message = postData["message"] as? String, let postId = postData["postId"] as? String {
+        if let message = postData["message"] as? String {
             self._message = message
-            self._postId = postId
+            self._postId = postKey
             if let pImage = postData["postImage"] as? String {
                 self._postImage = pImage
             }
-            if let poster = postData["poster"] as? String {
+            if let poster = postData["senderId"] as? String {
                 self._poster = poster
             } else {
                 self._poster = "nan"

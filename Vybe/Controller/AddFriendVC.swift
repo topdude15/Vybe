@@ -96,11 +96,8 @@ class AddFriendVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let friend = friends[indexPath.row]
-        print("here")
         let friendId = friend.friendId
         let uid = Auth.auth().currentUser?.uid
-        print("Also here")
-        Database.database().reference().child("messages").childByAutoId().updateChildValues(["name": "here"])
         Database.database().reference().child("friendships").child(friendId).updateChildValues([uid!: 2])
         Database.database().reference().child("friendships").child(uid!).updateChildValues([friendId: 2])
         self.loadTable()

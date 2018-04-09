@@ -26,6 +26,7 @@ class CaptureVC: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
         shouldUseDeviceOrientation = true
         allowAutoRotate = true
         audioEnabled = true
+        allowBackgroundAudio = true
         if Auth.auth().currentUser == nil {
             let frontPage = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FrontPageVC")
             self.present(frontPage, animated: true, completion: nil)

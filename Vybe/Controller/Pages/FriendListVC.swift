@@ -48,7 +48,10 @@ class FriendListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         // Dispose of any resources that can be recreated.
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
+        let friend = friends[indexPath.row]
+        Util.ds.friendId = friend.friendId
+        let chat = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChatVC")
+        self.present(chat, animated: true, completion: nil)
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let friend = friends[indexPath.row]

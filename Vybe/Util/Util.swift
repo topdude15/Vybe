@@ -12,5 +12,8 @@ class Util {
     static let ds = Util()
     
     var userInfo: Dictionary<String, AnyObject> = [:]
+    
+    var friendId = ""
+    
 }
 
