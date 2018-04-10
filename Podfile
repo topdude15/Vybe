@@ -11,7 +11,6 @@ target 'Vybe' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Pulley'
-  pod 'SwiftyCam'
   pod 'Material', '~> 2.0'
   
   target 'VybeTests' do

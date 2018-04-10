@@ -399,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hYo-ql-ihs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5263" y="640"/>
+            <point key="canvasLocation" x="-5114" y="642"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="fh2-ao-H5E">
@@ -632,8 +632,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="captureButton" destination="CBc-Bo-4Rx" id="kcq-17-aOF"/>
                         <outlet property="flashButton" destination="9u0-ml-GbV" id="de4-FS-GkX"/>
                         <outlet property="flipCameraButton" destination="kkB-P2-6pa" id="ltA-DU-IkR"/>
+                        <outlet property="searchBar" destination="B4E-JU-CmN" id="gtO-6R-3ok"/>
+                        <outlet property="storyImage" destination="Rw3-Xe-x3h" id="auJ-BX-6za"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

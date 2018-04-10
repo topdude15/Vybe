@@ -63,9 +63,8 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
     
     
     func loadTable() {
-        self.chats = []
         Database.database().reference().child("messages").child(chatKey).observe(.value) { (snapshot) in
-            
+            self.chats = []
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
                 for snap in snapshot {
                     if let postDict = snap.value as? Dictionary<String, AnyObject> {

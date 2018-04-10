@@ -14,9 +14,13 @@ class CaptureVC: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
    // @IBOutlet weak var captureButton: SwiftyCamButton!
     @IBOutlet weak var flipCameraButton: UIButton!
     @IBOutlet weak var flashButton: UIButton!
+    @IBOutlet weak var captureButton: SwiftyRecordButton!
+    @IBOutlet weak var storyImage: CustomImage!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     
     override func viewDidLoad() {
+        print("Hereasdf")
         super.viewDidLoad()
         swipeToZoomInverted = false
         pinchToZoom = true
@@ -35,16 +39,39 @@ class CaptureVC: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-       // captureButton.delegate = self
+        captureButton.delegate = self
     }
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didTake photo: UIImage) {
-        //
+        let photo = PhotoVC(image: photo)
+        self.present(photo, animated: true, completion: nil)
     }
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didBeginRecordingVideo camera: SwiftyCamViewController.CameraSelection) {
-        //
+        print("Yup")
+        captureButton.growButton()
+        UIView.animate(withDuration: 0.25) {
+            self.flashButton.alpha = 0.0
+            self.flipCameraButton.alpha = 0.0
+            self.storyImage.alpha = 0.0
+            self.searchBar.alpha = 0.0
+        }
     }
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didFinishRecordingVideo camera: SwiftyCamViewController.CameraSelection) {
-        //
+        print("Done!")
+        captureButton.shrinkButton()
+        UIView.animate(withDuration: 0.25) {
+            self.flashButton.alpha = 1.0
+            self.flipCameraButton.alpha = 1.0
+            self.storyImage.alpha = 1.0
+            self.searchBar.alpha = 1.0
+        }
+    }
+    func swiftyCam(_ swiftyCam: SwiftyCamViewController, didFinishProcessVideoAt url: URL) {
+        print("Here")
+        let video = VideoVC(videoURL: url)
+        self.present(video, animated: true, completion: nil)
+    }
+    func swiftyCam(_ swiftyCam: SwiftyCamViewController, didFailToRecordVideo error: Error) {
+        print("Here is the error: \(error)")
     }
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didFocusAtPoint point: CGPoint) {
         let focusView = UIImageView(image: #imageLiteral(resourceName: "focus"))
@@ -66,9 +93,6 @@ class CaptureVC: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
     }
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didChangeZoomLevel zoom: CGFloat) {
         //
-    }
-    func swiftyCam(_ swiftyCam: SwiftyCamViewController, didFailToRecordVideo error: Error) {
-        print(error)
     }
     
 
