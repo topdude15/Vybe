@@ -14,6 +14,7 @@ class Chat {
     private var _postImage: String?
     private var _poster: String!
     private var _postId: String!
+    private var _photoUrl: String?
     
     var message: String {
         return _message
@@ -27,6 +28,9 @@ class Chat {
     var postId: String {
         return _postId
     }
+    var photoUrl: String? {
+        return _photoUrl
+    }
     init(postKey: String, postData: Dictionary<String, AnyObject>) {
         if let message = postData["message"] as? String {
             self._message = message
@@ -38,6 +42,9 @@ class Chat {
                 self._poster = poster
             } else {
                 self._poster = "nan"
+            }
+            if let photoUrl = postData["photoUrl"] as? String {
+                self._photoUrl = photoUrl
             }
         }
         

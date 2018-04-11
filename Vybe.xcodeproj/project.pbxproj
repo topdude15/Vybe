@@ -30,10 +30,13 @@
 		CF6D3DBB2043069E008B93B2 /* SwiftyCamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3DB72043069D008B93B2 /* SwiftyCamButton.swift */; };
 		CF6D3DBC2043069E008B93B2 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3DB82043069D008B93B2 /* PreviewView.swift */; };
 		CF6D3DBE2043069E008B93B2 /* SwiftyCamViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6D3DBA2043069D008B93B2 /* SwiftyCamViewControllerDelegate.swift */; };
+		CF6E0484207D6A6200CFF4FB /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6E0483207D6A6200CFF4FB /* Orientation.swift */; };
+		CF6E0486207E230C00CFF4FB /* SwiftyRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6E0485207E230B00CFF4FB /* SwiftyRecordButton.swift */; };
+		CF6E0488207E47A900CFF4FB /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6E0487207E47A900CFF4FB /* PhotoCell.swift */; };
+		CF6E048B207E4B6200CFF4FB /* ViewPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6E048A207E4B6200CFF4FB /* ViewPhotoVC.swift */; };
 		CF905A03207CD48D00046C96 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF905A02207CD48D00046C96 /* PhotoVC.swift */; };
 		CF905A05207CD67600046C96 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF905A04207CD67600046C96 /* VideoVC.swift */; };
 		CF9EFFA5204452770026DCA1 /* TestingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9EFFA4204452770026DCA1 /* TestingVC.swift */; };
-		CFC1FB7D206C2D14005CE6BE /* SwiftyRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB7C206C2D14005CE6BE /* SwiftyRecordButton.swift */; };
 		CFC1FB7F206C5501005CE6BE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB7E206C5501005CE6BE /* CustomView.swift */; };
 		CFC1FB81206C9504005CE6BE /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB80206C9504005CE6BE /* CustomImage.swift */; };
 		CFC1FB83206C9733005CE6BE /* FrontPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB82206C9733005CE6BE /* FrontPageVC.swift */; };
@@ -100,10 +103,13 @@
 		CF6D3DB82043069D008B93B2 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		CF6D3DB92043069D008B93B2 /* SwiftyCamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCamViewController.swift; sourceTree = "<group>"; };
 		CF6D3DBA2043069D008B93B2 /* SwiftyCamViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCamViewControllerDelegate.swift; sourceTree = "<group>"; };
+		CF6E0483207D6A6200CFF4FB /* Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Orientation.swift; path = "../../../../Downloads/SwiftyCam-Swift4 3/Source/Orientation.swift"; sourceTree = "<group>"; };
+		CF6E0485207E230B00CFF4FB /* SwiftyRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyRecordButton.swift; sourceTree = "<group>"; };
+		CF6E0487207E47A900CFF4FB /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		CF6E048A207E4B6200CFF4FB /* ViewPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoVC.swift; sourceTree = "<group>"; };
 		CF905A02207CD48D00046C96 /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		CF905A04207CD67600046C96 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		CF9EFFA4204452770026DCA1 /* TestingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingVC.swift; sourceTree = "<group>"; };
-		CFC1FB7C206C2D14005CE6BE /* SwiftyRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyRecordButton.swift; sourceTree = "<group>"; };
 		CFC1FB7E206C5501005CE6BE /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		CFC1FB80206C9504005CE6BE /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		CFC1FB82206C9733005CE6BE /* FrontPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageVC.swift; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 		CF0053F52043506D003CDEFB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CF6E0489207E4B2300CFF4FB /* View Media */,
 				CF905A01207CD47000046C96 /* Camera Output */,
 				CF325E1E2072551700D0F3CE /* Pages */,
 				CFC1FB8820704FEA005CE6BE /* Sign Up */,
@@ -192,6 +199,7 @@
 				CF325E2B2072CC8700D0F3CE /* Table Cells */,
 				CFC1FB7E206C5501005CE6BE /* CustomView.swift */,
 				CFC1FB80206C9504005CE6BE /* CustomImage.swift */,
+				CF6E0485207E230B00CFF4FB /* SwiftyRecordButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -221,6 +229,7 @@
 				CF325E182071BB6500D0F3CE /* AddFriendCell.swift */,
 				CF325E1F2072554300D0F3CE /* FriendCell.swift */,
 				CF325E292072CC6D00D0F3CE /* ChatCell.swift */,
+				CF6E0487207E47A900CFF4FB /* PhotoCell.swift */,
 			);
 			path = "Table Cells";
 			sourceTree = "<group>";
@@ -286,13 +295,21 @@
 		CF6D3DB62043069D008B93B2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				CF6E0483207D6A6200CFF4FB /* Orientation.swift */,
 				CF6D3DB72043069D008B93B2 /* SwiftyCamButton.swift */,
 				CF6D3DB82043069D008B93B2 /* PreviewView.swift */,
 				CF6D3DB92043069D008B93B2 /* SwiftyCamViewController.swift */,
 				CF6D3DBA2043069D008B93B2 /* SwiftyCamViewControllerDelegate.swift */,
-				CFC1FB7C206C2D14005CE6BE /* SwiftyRecordButton.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		CF6E0489207E4B2300CFF4FB /* View Media */ = {
+			isa = PBXGroup;
+			children = (
+				CF6E048A207E4B6200CFF4FB /* ViewPhotoVC.swift */,
+			);
+			path = "View Media";
 			sourceTree = "<group>";
 		};
 		CF905A01207CD47000046C96 /* Camera Output */ = {
@@ -631,13 +648,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFFB85C6207D5A1B009A9936 /* SwiftyCamViewController.swift in Sources */,
+				CF6E048B207E4B6200CFF4FB /* ViewPhotoVC.swift in Sources */,
 				CF905A05207CD67600046C96 /* VideoVC.swift in Sources */,
 				CF6D3DBB2043069E008B93B2 /* SwiftyCamButton.swift in Sources */,
 				CFC1FB9320708533005CE6BE /* Util.swift in Sources */,
 				CF325E222072555400D0F3CE /* Friend.swift in Sources */,
 				CF905A03207CD48D00046C96 /* PhotoVC.swift in Sources */,
 				CFC1FB9020705015005CE6BE /* SignUpPassword.swift in Sources */,
-				CFC1FB7D206C2D14005CE6BE /* SwiftyRecordButton.swift in Sources */,
 				CFC1FB8720704D7F005CE6BE /* LogInVC.swift in Sources */,
 				CF325E1B2071BEEB00D0F3CE /* AddFriend.swift in Sources */,
 				CF9EFFA5204452770026DCA1 /* TestingVC.swift in Sources */,
@@ -647,13 +664,16 @@
 				CFC1FB8E2070500B005CE6BE /* SignUpUsername.swift in Sources */,
 				CF6D3DBE2043069E008B93B2 /* SwiftyCamViewControllerDelegate.swift in Sources */,
 				CF6D3DBC2043069E008B93B2 /* PreviewView.swift in Sources */,
+				CF6E0484207D6A6200CFF4FB /* Orientation.swift in Sources */,
 				CFC1FB7F206C5501005CE6BE /* CustomView.swift in Sources */,
 				CFC1FB9520708613005CE6BE /* SignUpEmail.swift in Sources */,
 				CF0053F920435E45003CDEFB /* MainPageVC.swift in Sources */,
+				CF6E0488207E47A900CFF4FB /* PhotoCell.swift in Sources */,
 				CF325E192071BB6500D0F3CE /* AddFriendCell.swift in Sources */,
 				CFC1FB8A20704FF6005CE6BE /* SignUpName.swift in Sources */,
 				CF325E202072554300D0F3CE /* FriendCell.swift in Sources */,
 				CF6D3D87204304D7008B93B2 /* AppDelegate.swift in Sources */,
+				CF6E0486207E230C00CFF4FB /* SwiftyRecordButton.swift in Sources */,
 				CF325E282072CC4900D0F3CE /* Chat.swift in Sources */,
 				CF6D3DB520430674008B93B2 /* CaptureVC.swift in Sources */,
 				CFC1FB83206C9733005CE6BE /* FrontPageVC.swift in Sources */,

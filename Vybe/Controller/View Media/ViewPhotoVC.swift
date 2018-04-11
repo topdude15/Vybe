@@ -1,15 +1,15 @@
 //
-//  PhotoVC.swift
+//  ViewPhotoVC.swift
 //  Vybe
 //
-//  Created by Trevor Rose on 4/10/18.
+//  Created by Trevor Rose on 4/11/18.
 //  Copyright © 2018 Trevor Rose. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
-class PhotoVC: UIViewController {
+class ViewPhotoVC: UIViewController {
+
     private var backgroundImage: UIImage
     
     init(image: UIImage) {
@@ -26,20 +26,11 @@ class PhotoVC: UIViewController {
         backgroundImageView.contentMode = UIViewContentMode.scaleAspectFit
         backgroundImageView.image = backgroundImage
         view.addSubview(backgroundImageView)
-        
-        let sendButton = UIButton(frame: CGRect(x: (self.view.frame.width - 50), y: (self.view.frame.height - 50), width: 30.0, height: 30.0))
-        sendButton.setImage(#imageLiteral(resourceName: "cancel"), for: UIControlState())
-        //cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
-        view.addSubview(sendButton)
-    }
-    func sendImage() {
-        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
 }

@@ -86,11 +86,36 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let chat = chats[indexPath.row]
         
+        if chat.photoUrl != nil {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell") as? PhotoCell {
+                cell.configureCell(chat: chat)
+                return cell
+            }
+        }
+        
         if let cell = tableView.dequeueReusableCell(withIdentifier: "ChatCell") as? ChatCell {
             cell.configureCell(chat: chat)
             return cell
         } else {
             return ChatCell()
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let chat = chats[indexPath.row]
+        if chat.photoUrl != nil {
+            let ref = Storage.storage().reference(forURL: chat.photoUrl!)
+            ref.getData(maxSize: 2 * 1024 * 1024) { (data, error) in
+                if error != nil {
+                    print(error!)
+                } else {
+                    if let imgData = data {
+                        if let img = UIImage(data: imgData) {
+                            let view = ViewPhotoVC(image: img)
+                            self.present(view, animated: true, completion: nil)
+                        }
+                    }
+                }
+            }
         }
     }
     @IBAction func sendTapped(_ sender: Any) {

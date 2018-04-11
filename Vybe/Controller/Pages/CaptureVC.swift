@@ -66,7 +66,7 @@ class CaptureVC: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
         }
     }
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didFinishProcessVideoAt url: URL) {
-        print("Here")
+        print("Hereuujjhgjh")
         let video = VideoVC(videoURL: url)
         self.present(video, animated: true, completion: nil)
     }
