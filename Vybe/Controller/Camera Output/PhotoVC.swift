@@ -29,17 +29,18 @@ class PhotoVC: UIViewController {
         
         let sendButton = UIButton(frame: CGRect(x: (self.view.frame.width - 50), y: (self.view.frame.height - 50), width: 30.0, height: 30.0))
         sendButton.setImage(#imageLiteral(resourceName: "cancel"), for: UIControlState())
-        //cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
+        sendButton.addTarget(self, action: #selector(sendPhoto), for: .touchUpInside)
         view.addSubview(sendButton)
     }
-    func sendImage() {
-        
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @objc func sendPhoto() {
+        let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SendList") as! SendListVC
+        view.image = backgroundImage
+        view.imageSelected = true
+        self.present(view, animated: true, completion: nil)
+    }
 
 }

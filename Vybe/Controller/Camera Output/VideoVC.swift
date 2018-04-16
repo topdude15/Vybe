@@ -31,8 +31,6 @@ class VideoVC: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.gray
@@ -55,6 +53,12 @@ class VideoVC: UIViewController {
         cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
         view.addSubview(cancelButton)
         
+        let sendButton = UIButton(frame: CGRect(x: 10.0, y: 10.0, width: 30.0, height: 30.0))
+        sendButton.setImage(#imageLiteral(resourceName: "cancel"), for: UIControlState())
+        sendButton.addTarget(self, action: #selector(sendVideo), for: .touchUpInside)
+        view.addSubview(sendButton)
+
+        
         // Allow background audio to continue to play
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
@@ -74,7 +78,7 @@ class VideoVC: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.player?.play()
         }
-    }
+    } 
     
     @objc fileprivate func playerItemDidReachEnd(_ notification: Notification) {
         if self.player != nil {
@@ -84,5 +88,10 @@ class VideoVC: UIViewController {
     }
     @objc func cancel() {
         dismiss(animated: true, completion: nil)
+    }
+    @objc func sendVideo() {
+        let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SendList") as! SendListVC
+        view.videoURL = videoURL
+        self.present(view, animated: true, completion: nil)
     }
 }

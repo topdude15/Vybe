@@ -16,7 +16,6 @@ class CaptureVC: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
     @IBOutlet weak var flashButton: UIButton!
     @IBOutlet weak var captureButton: SwiftyRecordButton!
     @IBOutlet weak var storyImage: CustomImage!
-    @IBOutlet weak var searchBar: UISearchBar!
     
     
     override func viewDidLoad() {
@@ -43,7 +42,7 @@ class CaptureVC: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
     }
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didTake photo: UIImage) {
         let photo = PhotoVC(image: photo)
-        self.present(photo, animated: true, completion: nil)
+        self.present(photo, animated: false, completion: nil)
     }
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didBeginRecordingVideo camera: SwiftyCamViewController.CameraSelection) {
         print("Yup")
@@ -52,7 +51,6 @@ class CaptureVC: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
             self.flashButton.alpha = 0.0
             self.flipCameraButton.alpha = 0.0
             self.storyImage.alpha = 0.0
-            self.searchBar.alpha = 0.0
         }
     }
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didFinishRecordingVideo camera: SwiftyCamViewController.CameraSelection) {
@@ -62,11 +60,9 @@ class CaptureVC: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
             self.flashButton.alpha = 1.0
             self.flipCameraButton.alpha = 1.0
             self.storyImage.alpha = 1.0
-            self.searchBar.alpha = 1.0
         }
     }
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didFinishProcessVideoAt url: URL) {
-        print("Hereuujjhgjh")
         let video = VideoVC(videoURL: url)
         self.present(video, animated: true, completion: nil)
     }

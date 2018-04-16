@@ -776,7 +776,7 @@ open class SwiftyCamViewController: UIViewController {
 		let photoFileOutput = AVCaptureStillImageOutput()
 
 		if self.session.canAddOutput(photoFileOutput) {
-			photoFileOutput.outputSettings  = [AVVideoCodecKey: AVVideoCodecJPEG]
+            photoFileOutput.outputSettings  = [AVVideoCodecKey: AVVideoCodecType.jpeg]
 			self.session.addOutput(photoFileOutput)
 			self.photoFileOutput = photoFileOutput
 		}
