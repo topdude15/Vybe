@@ -16,5 +16,4 @@ class CustomView: UIView {
             self.layer.cornerRadius = self.cornerRadius
         }
     }
-    
 }

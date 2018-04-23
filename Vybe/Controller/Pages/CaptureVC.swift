@@ -101,7 +101,7 @@ class CaptureVC: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
         switchCamera()
     }
     @IBAction func toggleFlashTapped(_ sender: Any) {
-        
+        flashEnabled = !flashEnabled
     }
 
     @IBAction func tapStoryImage(_ sender: Any) {

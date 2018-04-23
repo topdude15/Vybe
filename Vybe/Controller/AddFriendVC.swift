@@ -103,4 +103,9 @@ class AddFriendVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
         self.loadTable()
     }
 
+    @IBAction func logOutTapped(_ sender: Any) {
+        try! Auth.auth().signOut()
+        let front = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FrontPageVC")
+        self.present(front, animated: true, completion: nil)
+    }
 }

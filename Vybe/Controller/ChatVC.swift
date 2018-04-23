@@ -14,7 +14,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageLabel: UITextField!
     
-    var chatKey = ""
+    var chatKey = "nil"
     var chats = [Chat]()
     
     override func viewDidLoad() {
@@ -24,6 +24,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 200
+        tableView.layer.cornerRadius = 15
         
         messageLabel.delegate = self
         
@@ -50,9 +51,9 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
         }
         Database.database().reference().child("users").child(friendId).observeSingleEvent(of: .value) { (snapshot) in
             if let dictionary = snapshot.value as? Dictionary<String, AnyObject> {
-                let firstName = dictionary["firstName"] as! String
-                let lastName = dictionary["lastName"] as! String
-                self.nameLabel.text = "\(firstName) \(lastName)"
+                let firstName = dictionary["firstName"] as? String
+                let lastName = dictionary["lastName"] as? String
+                self.nameLabel.text = "\(firstName ?? "") \(lastName ?? "")"
             }
         }
     }
@@ -60,7 +61,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
         self.view.endEditing(true)
         return false
     }
-    
+
     
     func loadTable() {
         Database.database().reference().child("messages").child(chatKey).observe(.value) { (snapshot) in
@@ -89,12 +90,14 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
         if chat.photoUrl != nil {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell") as? PhotoCell {
                 cell.configureCell(chat: chat)
+                cell.backgroundColor = UIColor.clear
                 return cell
             }
         }
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "ChatCell") as? ChatCell {
             cell.configureCell(chat: chat)
+            cell.backgroundColor = UIColor.clear
             return cell
         } else {
             return ChatCell()
@@ -116,8 +119,12 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
                     }
                 }
             }
+        } else if chat.videoUrl != nil {
+            let view = ViewVideoVC(videoURL: chat.videoUrl!)
+            self.present(view, animated: true, completion: nil)
         }
     }
+    
     @IBAction func sendTapped(_ sender: Any) {
         if (messageLabel.text != "") {
             let uid = Auth.auth().currentUser?.uid
@@ -132,5 +139,8 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
             self.messageLabel.text = ""
         }
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
+    }
 }

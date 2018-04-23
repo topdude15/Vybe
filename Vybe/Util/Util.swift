@@ -14,7 +14,7 @@ class Util {
     
     var userInfo: Dictionary<String, AnyObject> = [:]
     
-    var friendId = ""
+    var friendId = "nil"
     
 }
 

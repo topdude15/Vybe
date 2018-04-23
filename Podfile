@@ -12,6 +12,7 @@ target 'Vybe' do
   pod 'Firebase/Database'
   pod 'Pulley'
   pod 'Material', '~> 2.0'
+  pod 'SWReveal'
   
   target 'VybeTests' do
     inherit! :search_paths

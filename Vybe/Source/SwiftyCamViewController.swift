@@ -1204,17 +1204,17 @@ extension SwiftyCamViewController {
 
 	fileprivate func addGestureRecognizers() {
 		pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(zoomGesture(pinch:)))
-		pinchGesture.delegate = self
+        pinchGesture.delegate = self as? UIGestureRecognizerDelegate
 		previewLayer.addGestureRecognizer(pinchGesture)
 
 		let singleTapGesture = UITapGestureRecognizer(target: self, action: #selector(singleTapGesture(tap:)))
 		singleTapGesture.numberOfTapsRequired = 1
-		singleTapGesture.delegate = self
+        singleTapGesture.delegate = self as? UIGestureRecognizerDelegate
 		previewLayer.addGestureRecognizer(singleTapGesture)
 
 		let doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(doubleTapGesture(tap:)))
 		doubleTapGesture.numberOfTapsRequired = 2
-		doubleTapGesture.delegate = self
+        doubleTapGesture.delegate = self as? UIGestureRecognizerDelegate
 		previewLayer.addGestureRecognizer(doubleTapGesture)
 
 //        panGesture = UIPanGestureRecognizer(target: self, action: #selector(panGesture(pan:)))
@@ -1226,14 +1226,14 @@ extension SwiftyCamViewController {
 
 // MARK: UIGestureRecognizerDelegate
 
-extension SwiftyCamViewController : UIGestureRecognizerDelegate {
-
-	/// Set beginZoomScale when pinch begins
-
-	public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-		if gestureRecognizer.isKind(of: UIPinchGestureRecognizer.self) {
-			beginZoomScale = zoomScale;
-		}
-		return true
-	}
-}
+//extension SwiftyCamViewController : UIGestureRecognizerDelegate {
+//
+//    /// Set beginZoomScale when pinch begins
+//
+//    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+//        if gestureRecognizer.isKind(of: UIPinchGestureRecognizer.self) {
+//            beginZoomScale = zoomScale;
+//        }
+//        return true
+//    }
+//}

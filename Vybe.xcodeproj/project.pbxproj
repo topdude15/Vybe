@@ -14,6 +14,8 @@
 		CF266C9020837E7E000A4563 /* SendListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF266C8F20837E7E000A4563 /* SendListVC.swift */; };
 		CF266C9220837EC5000A4563 /* SendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF266C9120837EC5000A4563 /* SendCell.swift */; };
 		CF266C9420837ED9000A4563 /* Send.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF266C9320837ED9000A4563 /* Send.swift */; };
+		CF266C982084BF87000A4563 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF266C972084BF87000A4563 /* VideoCell.swift */; };
+		CF266C9D20875FAC000A4563 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF266C9C20875FAC000A4563 /* SWRevealViewController.m */; };
 		CF2B015F206C28E7007C1B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2B015E206C28E7007C1B6F /* Main.storyboard */; };
 		CF325E132071688200D0F3CE /* AddFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E122071688200D0F3CE /* AddFriendVC.swift */; };
 		CF325E192071BB6500D0F3CE /* AddFriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF325E182071BB6500D0F3CE /* AddFriendCell.swift */; };
@@ -41,6 +43,8 @@
 		CF905A03207CD48D00046C96 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF905A02207CD48D00046C96 /* PhotoVC.swift */; };
 		CF905A05207CD67600046C96 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF905A04207CD67600046C96 /* VideoVC.swift */; };
 		CF9EFFA5204452770026DCA1 /* TestingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9EFFA4204452770026DCA1 /* TestingVC.swift */; };
+		CFA02EEC208C02E400ABC15A /* RightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA02EEB208C02E400ABC15A /* RightVC.swift */; };
+		CFA02EEE208D740100ABC15A /* CustomChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA02EED208D740100ABC15A /* CustomChatCell.swift */; };
 		CFC1FB7F206C5501005CE6BE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB7E206C5501005CE6BE /* CustomView.swift */; };
 		CFC1FB81206C9504005CE6BE /* CustomImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB80206C9504005CE6BE /* CustomImage.swift */; };
 		CFC1FB83206C9733005CE6BE /* FrontPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1FB82206C9733005CE6BE /* FrontPageVC.swift */; };
@@ -84,6 +88,10 @@
 		CF266C8F20837E7E000A4563 /* SendListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendListVC.swift; sourceTree = "<group>"; };
 		CF266C9120837EC5000A4563 /* SendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendCell.swift; sourceTree = "<group>"; };
 		CF266C9320837ED9000A4563 /* Send.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Send.swift; sourceTree = "<group>"; };
+		CF266C972084BF87000A4563 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		CF266C9A20875FAA000A4563 /* Vybe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vybe-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF266C9B20875FAC000A4563 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		CF266C9C20875FAC000A4563 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		CF2B015E206C28E7007C1B6F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CF325E122071688200D0F3CE /* AddFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendVC.swift; sourceTree = "<group>"; };
 		CF325E182071BB6500D0F3CE /* AddFriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendCell.swift; sourceTree = "<group>"; };
@@ -118,6 +126,8 @@
 		CF905A02207CD48D00046C96 /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		CF905A04207CD67600046C96 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		CF9EFFA4204452770026DCA1 /* TestingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingVC.swift; sourceTree = "<group>"; };
+		CFA02EEB208C02E400ABC15A /* RightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightVC.swift; sourceTree = "<group>"; };
+		CFA02EED208D740100ABC15A /* CustomChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChatCell.swift; sourceTree = "<group>"; };
 		CFC1FB7E206C5501005CE6BE /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		CFC1FB80206C9504005CE6BE /* CustomImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImage.swift; sourceTree = "<group>"; };
 		CFC1FB82206C9733005CE6BE /* FrontPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageVC.swift; sourceTree = "<group>"; };
@@ -191,7 +201,6 @@
 				CF905A01207CD47000046C96 /* Camera Output */,
 				CF325E1E2072551700D0F3CE /* Pages */,
 				CFC1FB8820704FEA005CE6BE /* Sign Up */,
-				CF0053F820435E45003CDEFB /* MainPageVC.swift */,
 				CF9EFFA4204452770026DCA1 /* TestingVC.swift */,
 				CFC1FB82206C9733005CE6BE /* FrontPageVC.swift */,
 				CFC1FB8620704D7F005CE6BE /* LogInVC.swift */,
@@ -209,6 +218,7 @@
 				CFC1FB7E206C5501005CE6BE /* CustomView.swift */,
 				CFC1FB80206C9504005CE6BE /* CustomImage.swift */,
 				CF6E0485207E230B00CFF4FB /* SwiftyRecordButton.swift */,
+				CFA02EED208D740100ABC15A /* CustomChatCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -224,11 +234,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CF266C9920875F97000A4563 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF266C9B20875FAC000A4563 /* SWRevealViewController.h */,
+				CF266C9C20875FAC000A4563 /* SWRevealViewController.m */,
+				CF266C9A20875FAA000A4563 /* Vybe-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CF325E1E2072551700D0F3CE /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				CF0053F820435E45003CDEFB /* MainPageVC.swift */,
 				CF6D3DB420430674008B93B2 /* CaptureVC.swift */,
 				CF325E1C2072551000D0F3CE /* FriendListVC.swift */,
+				CFA02EEB208C02E400ABC15A /* RightVC.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -241,6 +263,7 @@
 				CF325E292072CC6D00D0F3CE /* ChatCell.swift */,
 				CF6E0487207E47A900CFF4FB /* PhotoCell.swift */,
 				CF266C9120837EC5000A4563 /* SendCell.swift */,
+				CF266C972084BF87000A4563 /* VideoCell.swift */,
 			);
 			path = "Table Cells";
 			sourceTree = "<group>";
@@ -270,6 +293,7 @@
 		CF6D3D85204304D7008B93B2 /* Vybe */ = {
 			isa = PBXGroup;
 			children = (
+				CF266C9920875F97000A4563 /* Supporting Files */,
 				CF0053F72043507C003CDEFB /* Model */,
 				CF0053F620435076003CDEFB /* View */,
 				CF0053F52043506D003CDEFB /* Controller */,
@@ -430,6 +454,7 @@
 				TargetAttributes = {
 					CF6D3D82204304D7008B93B2 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					CF6D3D96204304D7008B93B2 = {
@@ -666,24 +691,28 @@
 				CF6D3DBB2043069E008B93B2 /* SwiftyCamButton.swift in Sources */,
 				CFC1FB9320708533005CE6BE /* Util.swift in Sources */,
 				CF325E222072555400D0F3CE /* Friend.swift in Sources */,
+				CFA02EEC208C02E400ABC15A /* RightVC.swift in Sources */,
 				CF905A03207CD48D00046C96 /* PhotoVC.swift in Sources */,
 				CFC1FB9020705015005CE6BE /* SignUpPassword.swift in Sources */,
 				CFC1FB8720704D7F005CE6BE /* LogInVC.swift in Sources */,
 				CF325E1B2071BEEB00D0F3CE /* AddFriend.swift in Sources */,
 				CF9EFFA5204452770026DCA1 /* TestingVC.swift in Sources */,
 				CF325E132071688200D0F3CE /* AddFriendVC.swift in Sources */,
+				CF266C982084BF87000A4563 /* VideoCell.swift in Sources */,
 				CFC1FB81206C9504005CE6BE /* CustomImage.swift in Sources */,
 				CF325E1D2072551000D0F3CE /* FriendListVC.swift in Sources */,
 				CFC1FB8E2070500B005CE6BE /* SignUpUsername.swift in Sources */,
 				CF6D3DBE2043069E008B93B2 /* SwiftyCamViewControllerDelegate.swift in Sources */,
 				CF6D3DBC2043069E008B93B2 /* PreviewView.swift in Sources */,
 				CF6E0484207D6A6200CFF4FB /* Orientation.swift in Sources */,
+				CFA02EEE208D740100ABC15A /* CustomChatCell.swift in Sources */,
 				CFC1FB7F206C5501005CE6BE /* CustomView.swift in Sources */,
 				CFC1FB9520708613005CE6BE /* SignUpEmail.swift in Sources */,
 				CF0053F920435E45003CDEFB /* MainPageVC.swift in Sources */,
 				CF6E0488207E47A900CFF4FB /* PhotoCell.swift in Sources */,
 				CF325E192071BB6500D0F3CE /* AddFriendCell.swift in Sources */,
 				CFC1FB8A20704FF6005CE6BE /* SignUpName.swift in Sources */,
+				CF266C9D20875FAC000A4563 /* SWRevealViewController.m in Sources */,
 				CF325E202072554300D0F3CE /* FriendCell.swift in Sources */,
 				CF6D3D87204304D7008B93B2 /* AppDelegate.swift in Sources */,
 				CF6E0486207E230C00CFF4FB /* SwiftyRecordButton.swift in Sources */,
@@ -858,6 +887,7 @@
 			baseConfigurationReference = F7C7F287C3C164AF6382E1A9 /* Pods-Vybe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CYJ5JJBLT6;
 				INFOPLIST_FILE = Vybe/Info.plist;
@@ -865,6 +895,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keyloftstudios.Vybe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vybe/Supporting Files/Vybe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -875,6 +907,7 @@
 			baseConfigurationReference = A06224229B1A35A16C52C7F0 /* Pods-Vybe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CYJ5JJBLT6;
 				INFOPLIST_FILE = Vybe/Info.plist;
@@ -882,6 +915,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keyloftstudios.Vybe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vybe/Supporting Files/Vybe-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

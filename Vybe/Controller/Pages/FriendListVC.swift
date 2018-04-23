@@ -9,10 +9,10 @@
 import UIKit
 import Firebase
 
-class FriendListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FriendListVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPageViewControllerDelegate {
 
+    @IBOutlet weak var friendButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
-    
     var friends = [Friend]()
     
     override func viewDidLoad() {
@@ -50,12 +50,15 @@ class FriendListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let friend = friends[indexPath.row]
         Util.ds.friendId = friend.friendId
-        let chat = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChatVC")
-        self.present(chat, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "chat", sender: nil)
+
+//        let chat = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ChatVC")
+//        self.present(chat, animated: true, completion: nil)
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let friend = friends[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? FriendCell {
+            cell.backgroundColor = UIColor.clear
             cell.configureCell(friend: friend)
             return cell
         } else {
@@ -67,5 +70,8 @@ class FriendListVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return friends.count
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 }
