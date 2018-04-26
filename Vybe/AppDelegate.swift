@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
+        
+        print(Date().timeIntervalSince1970)
         if Auth.auth().currentUser?.uid != nil {
             let main = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainPageVC")
             self.window?.rootViewController = main

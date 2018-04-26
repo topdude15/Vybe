@@ -29,7 +29,7 @@ class MainPageVC: UIViewController {
         middleFrame.origin.x = self.view.frame.width
         middle.view.frame = middleFrame
         
-        let right = self.storyboard?.instantiateViewController(withIdentifier: "RightVC") as! RightVC
+        let right = self.storyboard?.instantiateViewController(withIdentifier: "StoryVC") as! StoryVC
         self.addChildViewController(right)
         self.scroll.addSubview(right.view)
         self.didMove(toParentViewController: self)

@@ -28,6 +28,10 @@ class SendListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.dataSource = self
         let uid = Auth.auth().currentUser?.uid
         
+        let selfStory = Send(key: uid!)
+        self.friends.insert(selfStory, at: 0)
+        self.tableView.reloadData()
+        
         Database.database().reference().child("friendships").child(uid!).observeSingleEvent(of: .value) { (snapshot) in
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
                 for snap in snapshot {
@@ -42,6 +46,7 @@ class SendListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 }
             }
         }
+        
         // Do any additional setup after loading the view.
     }
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -84,16 +89,27 @@ class SendListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                         let downloadUrl = metadata?.downloadURL()?.absoluteString
                         let imageLink = downloadUrl!
                         for user in self.friendList {
-                            let referenceInfo: Dictionary<String, AnyObject> = [
-                                "senderId": uid as AnyObject,
-                                "recieverId": user as AnyObject,
-                                "photoUrl": imageLink as AnyObject
-                            ]
-                            Database.database().reference().child("users").child(user).child("messages").child(uid!).observeSingleEvent(of: .value) { (snapshot) in
-                                let refKey = snapshot.value
-                                let newKey = Database.database().reference().child("messages").child(refKey as! String).childByAutoId()
-                                newKey.updateChildValues(referenceInfo)
+                            if user == uid {
+                                let referenceInfo: Dictionary<String, AnyObject> = [
+                                    "photoUrl": imageLink as AnyObject,
+                                    "timestamp": String(Date().toMillis()) as AnyObject
+                                ]
+                                let storyKey = Database.database().reference().child("stories").child(uid!).childByAutoId()
+                                storyKey.updateChildValues(referenceInfo)
                                 self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+                            } else {
+                                let referenceInfo: Dictionary<String, AnyObject> = [
+                                    "senderId": uid as AnyObject,
+                                    "recieverId": user as AnyObject,
+                                    "photoUrl": imageLink as AnyObject,
+                                    "timestamp": String(Date().toMillis()) as AnyObject
+                                ]
+                                Database.database().reference().child("users").child(user).child("messages").child(uid!).observeSingleEvent(of: .value) { (snapshot) in
+                                    let refKey = snapshot.value
+                                    let newKey = Database.database().reference().child("messages").child(refKey as! String).childByAutoId()
+                                    newKey.updateChildValues(referenceInfo)
+                                    self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+                                }
                             }
                         }
                     }
@@ -124,5 +140,10 @@ class SendListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 }
             }
         }
+    }
+}
+extension Date {
+    func toMillis() -> Int64! {
+        return Int64(self.timeIntervalSince1970 * 1000)
     }
 }

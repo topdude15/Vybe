@@ -27,13 +27,19 @@ class SendCell: UITableViewCell {
     }
     
     func configureCell(data: Send) {
-        Database.database().reference().child("users").child(data.friendUid).observeSingleEvent(of: .value) { (snapshot) in
-            if let dictionary = snapshot.value as? Dictionary<String, AnyObject> {
-                let firstName = dictionary["firstName"] as? String
-                let lastName = dictionary["lastName"] as? String
-                self.nameLabel.text = ("\(firstName ?? "FIRST") \(lastName ?? "LAST")")
+        let uid = Auth.auth().currentUser?.uid
+        if data.friendUid == uid {
+            self.nameLabel.text = "My Story"
+        } else {
+            Database.database().reference().child("users").child(data.friendUid).observeSingleEvent(of: .value) { (snapshot) in
+                if let dictionary = snapshot.value as? Dictionary<String, AnyObject> {
+                    let firstName = dictionary["firstName"] as? String
+                    let lastName = dictionary["lastName"] as? String
+                    self.nameLabel.text = ("\(firstName ?? "FIRST") \(lastName ?? "LAST")")
+                }
             }
         }
+        
     }
 
 }
