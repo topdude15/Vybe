@@ -19,7 +19,6 @@ class CaptureVC: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
     
     
     override func viewDidLoad() {
-        print("Hereasdf")
         super.viewDidLoad()
         swipeToZoomInverted = false
         pinchToZoom = true

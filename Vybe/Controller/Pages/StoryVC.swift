@@ -9,20 +9,9 @@
 import UIKit
 import Firebase
 
-class StoryVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class StoryVC: UIViewController {
     
-    var friendsList = []
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //
-    }
-    
-
-    @IBOutlet weak var storyCollection: UICollectionView!
+    var friendsList: Array = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +22,13 @@ class StoryVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
                 for snap in snapshot {
                     if (snap.value as! Int == 2) {
                         self.friendsList.append(snap.key)
+                        
                     }
                 }
             }
+            print(self.friendsList)
         }
+
         // Do any additional setup after loading the view.
     }
 

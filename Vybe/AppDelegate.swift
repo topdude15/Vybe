@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let frontPage = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FrontPageVC")
             self.window?.rootViewController = frontPage
         }
+        
         // Override point for customization after application launch.
         return true
     }

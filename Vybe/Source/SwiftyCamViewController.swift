@@ -553,25 +553,24 @@ open class SwiftyCamViewController: UIViewController {
 
 	*/
 
-    public func stopVideoRecording() {
-        print("Stopping video Recording?")
-        if self.movieFileOutput?.isRecording == true {
-            self.isVideoRecording = false
-            movieFileOutput!.stopRecording()
-            disableFlash()
-            
-            if currentCamera == .front && flashEnabled == true && flashView != nil {
-                UIView.animate(withDuration: 0.1, delay: 0.0, options: .curveEaseInOut, animations: {
-                    self.flashView?.alpha = 0.0
-                }, completion: { (_) in
-                    self.flashView?.removeFromSuperview()
-                })
-            }
-            DispatchQueue.main.async {
-                self.cameraDelegate?.swiftyCam(self, didFinishRecordingVideo: self.currentCamera)
-            }
-        }
-    }
+	public func stopVideoRecording() {
+		if self.movieFileOutput?.isRecording == true {
+			self.isVideoRecording = false
+			movieFileOutput!.stopRecording()
+			disableFlash()
+
+			if currentCamera == .front && flashEnabled == true && flashView != nil {
+				UIView.animate(withDuration: 0.1, delay: 0.0, options: .curveEaseInOut, animations: {
+					self.flashView?.alpha = 0.0
+				}, completion: { (_) in
+					self.flashView?.removeFromSuperview()
+				})
+			}
+			DispatchQueue.main.async {
+				self.cameraDelegate?.swiftyCam(self, didFinishRecordingVideo: self.currentCamera)
+			}
+		}
+	}
 
 	/**
 
@@ -776,7 +775,7 @@ open class SwiftyCamViewController: UIViewController {
 		let photoFileOutput = AVCaptureStillImageOutput()
 
 		if self.session.canAddOutput(photoFileOutput) {
-            photoFileOutput.outputSettings  = [AVVideoCodecKey: AVVideoCodecType.jpeg]
+			photoFileOutput.outputSettings  = [AVVideoCodecKey: AVVideoCodecJPEG]
 			self.session.addOutput(photoFileOutput)
 			self.photoFileOutput = photoFileOutput
 		}
@@ -1204,17 +1203,17 @@ extension SwiftyCamViewController {
 
 	fileprivate func addGestureRecognizers() {
 		pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(zoomGesture(pinch:)))
-        pinchGesture.delegate = self as? UIGestureRecognizerDelegate
+		pinchGesture.delegate = self
 		previewLayer.addGestureRecognizer(pinchGesture)
 
 		let singleTapGesture = UITapGestureRecognizer(target: self, action: #selector(singleTapGesture(tap:)))
 		singleTapGesture.numberOfTapsRequired = 1
-        singleTapGesture.delegate = self as? UIGestureRecognizerDelegate
+		singleTapGesture.delegate = self
 		previewLayer.addGestureRecognizer(singleTapGesture)
 
 		let doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(doubleTapGesture(tap:)))
 		doubleTapGesture.numberOfTapsRequired = 2
-        doubleTapGesture.delegate = self as? UIGestureRecognizerDelegate
+		doubleTapGesture.delegate = self
 		previewLayer.addGestureRecognizer(doubleTapGesture)
 
 //        panGesture = UIPanGestureRecognizer(target: self, action: #selector(panGesture(pan:)))
@@ -1226,14 +1225,14 @@ extension SwiftyCamViewController {
 
 // MARK: UIGestureRecognizerDelegate
 
-//extension SwiftyCamViewController : UIGestureRecognizerDelegate {
-//
-//    /// Set beginZoomScale when pinch begins
-//
-//    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-//        if gestureRecognizer.isKind(of: UIPinchGestureRecognizer.self) {
-//            beginZoomScale = zoomScale;
-//        }
-//        return true
-//    }
-//}
+extension SwiftyCamViewController : UIGestureRecognizerDelegate {
+
+	/// Set beginZoomScale when pinch begins
+
+	public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+		if gestureRecognizer.isKind(of: UIPinchGestureRecognizer.self) {
+			beginZoomScale = zoomScale;
+		}
+		return true
+	}
+}
