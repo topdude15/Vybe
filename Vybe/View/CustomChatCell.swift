@@ -18,10 +18,12 @@ class CustomChatCell: UIView {
     }
     override func layoutSubviews() {
         super.layoutSubviews()
+        /*
         self.layer.shadowColor = UIColor(red:0.93, green:0.95, blue:0.98, alpha:1.0).cgColor
         self.layer.shadowOpacity = 1
         self.layer.shadowOffset = CGSize.zero
         self.layer.shadowRadius = 2
+         */
     }
 
 }

@@ -86,32 +86,35 @@ class SendListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     if error != nil {
                         print(error ?? "Unknown error")
                     } else {
-                        let downloadUrl = metadata?.downloadURL()?.absoluteString
-                        let imageLink = downloadUrl!
-                        for user in self.friendList {
-                            if user == uid {
-                                let referenceInfo: Dictionary<String, AnyObject> = [
-                                    "photoUrl": imageLink as AnyObject,
-                                    "timestamp": String(Date().toMillis()) as AnyObject
-                                ]
-                                let storyKey = Database.database().reference().child("stories").child(uid!).childByAutoId()
-                                storyKey.updateChildValues(referenceInfo)
-                                self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
-                            } else {
-                                let referenceInfo: Dictionary<String, AnyObject> = [
-                                    "senderId": uid as AnyObject,
-                                    "recieverId": user as AnyObject,
-                                    "photoUrl": imageLink as AnyObject,
-                                    "timestamp": String(Date().toMillis()) as AnyObject
-                                ]
-                                Database.database().reference().child("users").child(user).child("messages").child(uid!).observeSingleEvent(of: .value) { (snapshot) in
-                                    let refKey = snapshot.value
-                                    let newKey = Database.database().reference().child("messages").child(refKey as! String).childByAutoId()
-                                    newKey.updateChildValues(referenceInfo)
+                        Storage.storage().reference().child("postPics").child(imgUid).downloadURL(completion: { (url, error) in
+                            let imageLink = url!
+                            for user in self.friendList {
+                                if user == uid {
+                                    let referenceInfo: Dictionary<String, AnyObject> = [
+                                        "photoUrl": imageLink as AnyObject,
+                                        "timestamp": String(Date().toMillis()) as AnyObject
+                                    ]
+                                    let storyKey = Database.database().reference().child("stories").child(uid!).childByAutoId()
+                                    storyKey.updateChildValues(referenceInfo)
                                     self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+                                } else {
+                                    let referenceInfo: Dictionary<String, AnyObject> = [
+                                        "senderId": uid as AnyObject,
+                                        "recieverId": user as AnyObject,
+                                        "photoUrl": imageLink as AnyObject,
+                                        "timestamp": String(Date().toMillis()) as AnyObject
+                                    ]
+                                    Database.database().reference().child("users").child(user).child("messages").child(uid!).observeSingleEvent(of: .value) { (snapshot) in
+                                        let refKey = snapshot.value
+                                        let newKey = Database.database().reference().child("messages").child(refKey as! String).childByAutoId()
+                                        newKey.updateChildValues(referenceInfo)
+                                        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+                                    }
                                 }
                             }
-                        }
+                        })
+                        //let downloadUrl = metadata?.downloadURL()?.absoluteString
+
                     }
                 }
             }
@@ -122,21 +125,23 @@ class SendListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 if error != nil {
                     print(error?.localizedDescription ?? "Unknown Error")
                 } else {
-                    let downloadUrl = metadata?.downloadURL()?.absoluteString
-
-                    for user in self.friendList {
-                        let referenceInfo: Dictionary<String, AnyObject> = [
-                            "senderId": uid as AnyObject,
-                            "recieverId": user as AnyObject,
-                            "videoUrl": downloadUrl as AnyObject
-                        ]
-                        Database.database().reference().child("users").child(user).child("messages").child(uid!).observeSingleEvent(of: .value) { (snapshot) in
-                            let refKey = snapshot.value
-                            let newKey = Database.database().reference().child("messages").child(refKey as! String).childByAutoId()
-                            newKey.updateChildValues(referenceInfo)
-                            self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+                    Storage.storage().reference().child("postVids").child(vidUid).downloadURL(completion: { (url, error) in
+                        let downloadUrl = url
+                        
+                        for user in self.friendList {
+                            let referenceInfo: Dictionary<String, AnyObject> = [
+                                "senderId": uid as AnyObject,
+                                "recieverId": user as AnyObject,
+                                "videoUrl": downloadUrl as AnyObject
+                            ]
+                            Database.database().reference().child("users").child(user).child("messages").child(uid!).observeSingleEvent(of: .value) { (snapshot) in
+                                let refKey = snapshot.value
+                                let newKey = Database.database().reference().child("messages").child(refKey as! String).childByAutoId()
+                                newKey.updateChildValues(referenceInfo)
+                                self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+                            }
                         }
-                    }
+                    })
                 }
             }
         }

@@ -33,7 +33,7 @@ class SignUpPassword: UIViewController {
                 if error != nil {
                     print("Could not create user")
                 } else {
-                    let uid = user?.uid
+                    let uid = user?.user.uid
                     Database.database().reference().child("users").child(uid!).updateChildValues(Util.ds.userInfo)
                     Database.database().reference().child("usernames").updateChildValues([Util.ds.userInfo["username"] as! AnyHashable: uid!])
                     let main = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainPageVC")
